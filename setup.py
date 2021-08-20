@@ -4,18 +4,19 @@ from setuptools import setup
 #     long_description = fh.read()
 
 setup(
-    name="roulette",
+    name="roulette_selector",
     version="0.0.1",
     author="Eric Musa",
     author_email="eric.musa17@gmail.com",
     description="A small roulette-style random selector of weighted options",
     # long_description=long_description,
     # long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    packages=setuptools.find_packages(),
+    url="https://bitbucket.org/Eric-Musa/roulette/",
+    py_modules=['roulette_selector'],
+    package_dir={'': 'src'},
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: GNU GENERAL PUBLIC LICENSE",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',

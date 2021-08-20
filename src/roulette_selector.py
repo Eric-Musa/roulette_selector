@@ -1,9 +1,9 @@
-import numpy as np
+import random
 
 
 def roulette(choices):
-    total_prob = np.sum(list(choices.values()))
-    choice = np.random.uniform(0, total_prob)
+    total_prob = sum(list(choices.values()))
+    choice = random.uniform(0, total_prob)
     running_total = 0
     for k, v in choices.items():
         running_total += v
